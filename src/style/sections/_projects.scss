@@ -1,7 +1,7 @@
 #projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
-  margin-top: -15rem;
+  background: var(--lightBg);
+  color: var(--lightColor);
+  margin-top: -10rem;
   padding-top: 15rem;
 
   @include respond(tab-land) {

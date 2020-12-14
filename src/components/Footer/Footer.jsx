@@ -15,10 +15,12 @@ const Footer = () => {
     <footer className="footer navbar-static-bottom">
       <Container>
         <span className="back-to-top">
+        <sub style={{display:'block'}}>Back To Top</sub>
           <Link to="hero" smooth duration={1000}>
             <i className="fa fa-angle-up fa-2x" aria-hidden="true" />
           </Link>
         </span>
+        <hr />
         <div className="social-links">
           {networks &&
             networks.map((network) => {
@@ -36,15 +38,15 @@ const Footer = () => {
               );
             })}
         </div>
-        <hr />
+        {/* <hr /> */}
         <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{' '}
+          © {new Date().getFullYear()} - Developed by{' '}
           <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
+             Gabe Mitrakos
           </a>
         </p>
 
-        {isEnabled && <GithubButtons />}
+        {/* {isEnabled && <GithubButtons />} */}
       </Container>
     </footer>
   );

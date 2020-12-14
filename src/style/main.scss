@@ -10,9 +10,30 @@
 @import './layout/footer';
 @import './layout/sections';
 
+@import './sections/nav';
 @import './sections/about';
 @import './sections/contact';
 @import './sections/hero';
 @import './sections/projects';
 
 @import './vendor/css/font-awesome.min.css';
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,900&display=swap');
+
+html {
+
+  background: var(--lightBg);
+
+  --lightBtn: #FE016C;
+  --lightBg: #fff;
+  --lightColor: #232323;
+}
+
+html[data-theme='dark'] {
+    background: var(--lightBg);
+   --lightBtn: #FFBD07;
+   --lightBg: linear-gradient(80deg, #272423 0%, #2e2b2a 100%);
+   --lightColor: #fff;
+
+   color: var(--lightColor) !important;
+ }

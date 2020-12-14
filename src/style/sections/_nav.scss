@@ -1,0 +1,51 @@
+.navi {
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2em;
+    color: var(--lightColor);
+
+    .nav-btns {
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        gap: 1em;
+        font-size: 1.8rem;
+    }
+}
+
+svg {
+    top: 0px;
+    position: absolute;
+    right: 0px;
+    opacity: 1;
+    stroke-dasharray: 0 540;
+    stroke-dashoffset: -474;
+    stroke-width: 1px;
+    stroke: #19f6e8;
+    border-radius: 100%;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+
+    :hover > & {
+      stroke-width: 2px;
+      stroke-dashoffset: 0;
+      stroke-dasharray: 760;
+      border-radius: 100%;
+    }
+}
+
+
+@keyframes yellow{
+    0%{opacity: 0;
+      fill:none;
+      stroke-dasharray: 600;}
+    50%{opacity: 10;
+      fill:none;
+      stroke-dasharray: 1200;}
+    50%{
+      fill:rgba(255,255,255,0);}
+    100%{opacity: 10;
+      fill:#FEF202;
+      stroke-dasharray: 0;}
+  }
